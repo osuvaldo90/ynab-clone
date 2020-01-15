@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-watch": "KNEX_ENV=test nodemon -w src -w integration -r ts-node/register -x \"blue-tape integration/**/*.ts\""
+    "test-watch": "KNEX_ENV=test nodemon -w src -w integration -r ts-node/register -x \"blue-tape integration/**/*.ts\"",
+    "postinstall": "./setup-symlinks.sh"
   },
   "author": "",
   "license": "ISC",
