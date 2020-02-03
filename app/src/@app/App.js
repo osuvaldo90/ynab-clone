@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Test from '@app/Test'
-
 import logo from './logo.svg'
 import './App.css'
 

@@ -3,6 +3,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    jest: true,
   },
   extends: [
     'plugin:react/recommended',
@@ -41,4 +42,13 @@ module.exports = {
       pathGroupsExcludedImportTypes: ['builtin']
     }],
   },
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@app', './src/@app']
+        ],
+      }
+    }
+  }
 };
